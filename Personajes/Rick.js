@@ -13,7 +13,7 @@ const rick = {
 
 
 module.exports = {
-    singletonRick: SingletonRick,
+    SingletonRick: SingletonRick,
 };
 
 

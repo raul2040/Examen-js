@@ -1,6 +1,6 @@
 const importModules  = require("./Rick");
 
-let protoRick = importModules.singletonRick();
+let protoRick = importModules.SingletonRick();
 
 function SingletonMorty() {
     if(!this.instance) {
