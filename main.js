@@ -84,39 +84,28 @@ universo.addToUniverso(Fart, "Fart");
 console.assert("Fart" in universo);
 console.assert(universo.length == 2);
 
-/**
- * Todos SALVO Jerry cruzan a la dimensión "Fart".
- * Has de eliminarlos del mundo tierra y meterlos en la nueva dimensión "Fart".
- *
- * Es necesaria una función cruzarDimension para ser reutilizada posteriormente.
- * Puedes situarla en aquel componente que estimes más adecuado.
- *
- * La pistola añade a su historial "Fart".
- */
+
 universo.cruzarDimension("Tierra","Fart", "Jerry");
 
 console.assert(universo["Fart"].length == 5);
 console.assert(universo["Tierra"].length == 1);
 console.assert(gun.historial.length == 2);
 
-/**
- * Si haces un scan de la pistola, se muestra en consola
- * la lista de dimensiones, desde la más reciente a la más
- * antigua: Fart, Tierra.*/
 
 console.log(gun.scan());
 console.assert(gun.historial.length == 2);
 
 
-/**
- * Rick dispara la pistola y se añade al universo la dimensión "Coaches".
- */
 
-/*console.assert("Coach" in universo);
-console.assert(universo.length == 3);*/
+let coaches = [];
+protoRick.shootGun("Coaches");
+universo.addToUniverso(coaches, "Coaches");
+
+console.assert("Coaches" in universo);
+console.assert(universo.length == 3);
 
 /**
- * Los cuatro cruzan a la dimensión "Coach".
+ * Los cuatro cruzan a la dimensión "Coaches".
  *
  * Has de eliminarlos del mundo "Fart" y meterlos en la nueva dimensión "Coach".
  *
@@ -125,12 +114,14 @@ console.assert(universo.length == 3);*/
  * Si haces un scan de la pistola, se muestra en consola
  * Coaches, Fart, Tierra.
  */
+universo.cruzarDimension("Fart","Coaches");
 
-/*console.assert(universo["Coaches"].length == 5);
+
+console.assert(universo["Coaches"].length == 5);
 console.assert(universo["Fart"].length == 0);
 console.assert(universo["Tierra"].length == 1);
 console.log(gun.scan());
-console.assert(gun.historial.length == 3);*/
+console.assert(gun.historial.length == 3);
 
 
 
