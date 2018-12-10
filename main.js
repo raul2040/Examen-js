@@ -73,7 +73,7 @@ console.assert(universo.length == 1);
 let gun = importPortalGun.ThePortalGun;
 let Fart = [];
 protoRick.setGun(gun);
-gun.historial.push(tierra);
+gun.historial.push("Tierra");
 
 console.assert(gun);
 console.assert(gun.historial.length == 1);
@@ -97,15 +97,15 @@ universo.cruzarDimension("Tierra","Fart", "Jerry");
 
 console.assert(universo["Fart"].length == 5);
 console.assert(universo["Tierra"].length == 1);
-/*console.assert(gun.historial.length == 2);*/
+console.assert(gun.historial.length == 2);
 
 /**
  * Si haces un scan de la pistola, se muestra en consola
  * la lista de dimensiones, desde la más reciente a la más
  * antigua: Fart, Tierra.*/
 
-/*console.log(gun.scan());
-console.assert(gun.historial.length == 2);*/
+console.log(gun.scan());
+console.assert(gun.historial.length == 2);
 
 
 /**
