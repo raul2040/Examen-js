@@ -14,7 +14,13 @@ function SingletonRick(clone) {
 
 const rick = {
     ondas: "altas",
-    habla: "Es Rick-dículo!"
+    habla: "Es Rick-dículo!",
+    setGun: function(gun) {
+        this.gun = gun;
+    },
+    shootGun: function(mundo) {
+        this.gun.shoot(mundo);
+    }
 };
 
 
