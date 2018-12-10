@@ -128,9 +128,14 @@ console.assert(gun.historial.length == 3);
 /**
  * Crea un Doofus Rick segun se indica en el README
  */
+const doofous = {
+    setProperties: function (propertyName,propertyValue) {
+        this[propertyName] = propertyValue;
+    }
+};
 
-/*console.assert(doofous);
+console.assert(doofous);
 console.assert(doofous.id == "J-19-Z7");
 console.assert(doofous.ondas == "altas");
 console.assert(doufus.monedas.length == 4);
-console.assert(doufous.speak() == "Tengo una colección de monedas antiguas raras!");*/
+console.assert(doufous.speak() == "Tengo una colección de monedas antiguas raras!");
