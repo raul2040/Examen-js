@@ -93,31 +93,29 @@ console.assert(universo.length == 2);
  *
  * La pistola añade a su historial "Fart".
  */
+universo.cruzarDimension("Tierra","Fart", "Jerry");
 
-/*
 console.assert(universo["Fart"].length == 5);
 console.assert(universo["Tierra"].length == 1);
-console.assert(gun.historial.length == 2);
-*/
+/*console.assert(gun.historial.length == 2);*/
 
-/*
-*
+/**
  * Si haces un scan de la pistola, se muestra en consola
  * la lista de dimensiones, desde la más reciente a la más
- * antigua: Fart, Tierra.
+ * antigua: Fart, Tierra.*/
 
-console.log(gun.scan());
-console.assert(gun.historial.length == 2);
+/*console.log(gun.scan());
+console.assert(gun.historial.length == 2);*/
 
 
-/!**
+/**
  * Rick dispara la pistola y se añade al universo la dimensión "Coaches".
- *!/
+ */
 
-console.assert("Coach" in universo);
-console.assert(universo.length == 3);
+/*console.assert("Coach" in universo);
+console.assert(universo.length == 3);*/
 
-/!**
+/**
  * Los cuatro cruzan a la dimensión "Coach".
  *
  * Has de eliminarlos del mundo "Fart" y meterlos en la nueva dimensión "Coach".
@@ -126,23 +124,22 @@ console.assert(universo.length == 3);
  *
  * Si haces un scan de la pistola, se muestra en consola
  * Coaches, Fart, Tierra.
- *!/
+ */
 
-console.assert(universo["Coaches"].length == 5);
+/*console.assert(universo["Coaches"].length == 5);
 console.assert(universo["Fart"].length == 0);
 console.assert(universo["Tierra"].length == 1);
 console.log(gun.scan());
-console.assert(gun.historial.length == 3);
+console.assert(gun.historial.length == 3);*/
 
 
 
-/!**
+/**
  * Crea un Doofus Rick segun se indica en el README
- *!/
+ */
 
-console.assert(doofous);
+/*console.assert(doofous);
 console.assert(doofous.id == "J-19-Z7");
 console.assert(doofous.ondas == "altas");
 console.assert(doufus.monedas.length == 4);
-console.assert(doufous.speak() == "Tengo una colección de monedas antiguas raras!");
-*/
+console.assert(doufous.speak() == "Tengo una colección de monedas antiguas raras!");*/
